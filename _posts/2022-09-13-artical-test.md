@@ -2,9 +2,9 @@
 title:  博客测试
 date: 2022-09-13 06:31:06
 categories:
-- 日常 
+- Daily 
 tags:
-- 日常 
+- Daily 
 ---
 
 测试博客。
