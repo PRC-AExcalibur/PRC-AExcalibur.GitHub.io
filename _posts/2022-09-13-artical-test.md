@@ -1,14 +1,13 @@
 ---
-title:  Blog Test
-date: 2022-09-11 16:31:06
+title:  博客测试
+date: 2022-09-13 06:31:06
 categories:
-- Foo
-- Daily 
+- 日常 
 tags:
-- Foo
-- daily 
+- 日常 
 ---
 
+测试博客。
 The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don't forget to redefine the style by yourself.
 
 ---
@@ -74,7 +73,7 @@ This post is used for testing tag plugins. See [docs](http://zespia.tw/hexo/docs
 
 
 
-## Block Test
+# Block Test
 
 ### Normal blockquote
 
@@ -138,7 +137,7 @@ end
 
 
 
-## MathJax Test
+# MathJax Test
 One of the rewards of switching my website to [Jekyll](http://jekyllrb.com/) is the
 ability to support **MathJax**, which means I can write LaTeX-like equations that get
 nicely displayed in a web browser, like this one \\( \sqrt{\frac{n!}{k!(n-k)!}} \\) or
