@@ -1,9 +1,10 @@
 ---
 title:  博客测试
 categories:
+- Foo
 - Daily 
 tags:
-- Daily 
+- daily 
 ---
 
 测试博客。
