@@ -1,13 +1,12 @@
 ---
-title:  博客测试
+title:  博客中文测试
 categories:
 - Daily 
 tags:
 - daily 
 ---
 
-测试博客。
-The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don't forget to redefine the style by yourself.
+测试中文博客。
 
 ---
 
@@ -121,38 +120,11 @@ int main()
 }
 ```
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
-
 
 
 # MathJax Test
-One of the rewards of switching my website to [Jekyll](http://jekyllrb.com/) is the
-ability to support **MathJax**, which means I can write LaTeX-like equations that get
-nicely displayed in a web browser, like this one \\( \sqrt{\frac{n!}{k!(n-k)!}} \\) or
-this one \\( x^2 + y^2 = r^2 \\).
-
-### A Couple of Examples
-
-Here's a short list of examples. To know more about the details behind MathJax, you can
-always checked the provided documentation available at
-[http://docs.mathjax.org/en/latest/](http://docs.mathjax.org/en/latest/)
-
-Let's try a first example. Here's a dummy equation:
 
 $$a^2 + b^2 = c^2$$
-
-How do you write such expression? Very simple: using **double dollar** signs
 
 {% highlight r %}
 $$a^2 + b^2 = c^2$$
