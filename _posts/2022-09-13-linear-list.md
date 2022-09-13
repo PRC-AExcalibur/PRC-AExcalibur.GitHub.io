@@ -1,11 +1,10 @@
-﻿
----
-title:  线性表
+﻿---
+title:  【数据结构】线性表
 categories:
-- Data Structure 
+- DataStructure 
 tags:
-- Computer Science 
-- Data Structure
+- ComputerScience 
+- DataStructure
 ---
 
 数据结构笔记-线性表部分。
