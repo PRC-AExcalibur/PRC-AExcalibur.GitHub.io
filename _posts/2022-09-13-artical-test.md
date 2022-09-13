@@ -1,7 +1,6 @@
 ---
 title:  博客测试
 categories:
-- Foo
 - Daily 
 tags:
 - daily 
