@@ -207,7 +207,7 @@ $gap-between-main-and-footer    : 100px;
 // Headband
 // --------------------------------------------------
 $headband-height                : 3px;
-$headband-bg                    : url('/assets/images/avatar.jpeg');
+$headband-bg                    : $black-deep;
 
 
 
@@ -215,7 +215,7 @@ $headband-bg                    : url('/assets/images/avatar.jpeg');
 // Variables for header section elements.
 // --------------------------------------------------
 
-$head-bg                        : transparent;
+$head-bg                        : url('/assets/images/avatar.jpeg');
 
 // Site Meta
 $site-meta-text-align           : center;
