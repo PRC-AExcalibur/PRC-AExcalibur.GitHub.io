@@ -11,19 +11,14 @@
 @import "_posts-expanded";
 @import "sidebar/sidebar-blogroll";
 
-nav {
-  background:url(/assets/images/avatar.jpeg);
-  background-attachment: fixed;
-}
 
 body {
-  background:url(/assets/images/avatar.jpeg);
+  background:url(/assets/images/body_bg.jpeg);
   background-attachment: fixed;
 }
 
 main {
-  background:grey;
-
+	background-color:rgba(225,225,225,0.3);
 }
 
 
