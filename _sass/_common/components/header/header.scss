@@ -7,3 +7,8 @@
 @import "site-meta";
 @import "site-nav";
 @import "menu";
+
+body {
+  background:url(/assets/images/avatar.jpeg);
+  background-attachment: fixed;
+}
