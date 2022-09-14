@@ -17,8 +17,8 @@
 
 .brand {
   padding: 0;
-  background: none;
-
+  background: url(/assets/images/body_bg.jpeg);
+  background-attachment: fixed;
   &:hover { color: white; }
 }
 
