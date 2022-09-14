@@ -11,6 +11,21 @@
 @import "_posts-expanded";
 @import "sidebar/sidebar-blogroll";
 
+nav {
+  background:url(/assets/images/avatar.jpeg);
+  background-attachment: fixed;
+}
+
+body {
+  background:url(/assets/images/avatar.jpeg);
+  background-attachment: fixed;
+}
+
+main {
+  background:grey;
+
+}
+
 
 // Components
 // --------------------------------------------------
