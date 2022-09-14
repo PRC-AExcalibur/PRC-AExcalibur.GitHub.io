@@ -11,8 +11,12 @@
   .post-eof { display: none; }
 
   .post { 
-	background-color:rgba(225,225,225,0.8);
+	background-color:rgba(225,225,225,0.3);
 	margin-top: 120px; 
+	margin-bottom: 120px; 
+	margin-left: 120px; 
+	margin-right: 120px; 
+
   }
   .post:first-child { margin-top: 0; }
 
@@ -30,10 +34,7 @@
   }
   .post-title:hover:before { background: $black-deep; }
 
-  .post-body { 
-
-	margin: 0; 
-  }
+  .post-body { margin: 0; }
 
   .post-tags {
     text-align: left;
