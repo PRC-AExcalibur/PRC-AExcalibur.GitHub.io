@@ -3,3 +3,12 @@
 @import "_menu";
 @import "_sidebar";
 @import "_posts";
+
+body {
+  background:url(/assets/images/body_bg.jpeg);
+  background-attachment: fixed;
+}
+
+main {
+	background-color:rgba(225,225,225,0.8);
+}
