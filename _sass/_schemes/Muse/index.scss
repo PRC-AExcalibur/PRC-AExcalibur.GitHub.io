@@ -3,3 +3,9 @@
 @import "_menu";
 @import "_search";
 @import "sidebar/sidebar-blogroll";
+
+body {
+  background:url(/assets/images/body_bg.jpeg);
+  background-size:cover;
+  background-attachment: fixed;
+}
