@@ -227,7 +227,7 @@ $logo-font-size                 : 45px;
 $logo-font-size                 : if(type-of(jekyll-config('font.logo.size')) == 'number', jekyll-config('font.logo.size') + px, $logo-font-size);
 
 $site-subtitle-color            : $grey-dark;
-$subtitle-font-size             : 15px;
+$subtitle-font-size             : 28px;
 $subtitle-color                 : $grey-dark;
 
 // Menu
