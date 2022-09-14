@@ -11,6 +11,11 @@
 @import "_posts-expanded";
 @import "sidebar/sidebar-blogroll";
 
+body {
+  background:url(/assets/images/avatar.jpeg);
+  background-attachment: fixed;
+  background: rgba(0,0,0,0.4);
+}
 
 // Components
 // --------------------------------------------------
@@ -89,8 +94,3 @@
 
 // Helpers
 // --------------------------------------------------
-
-body {
-  background:url(/assets/images/avatar.jpeg);
-  background-attachment: fixed;
-}
