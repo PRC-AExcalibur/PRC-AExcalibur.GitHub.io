@@ -26,7 +26,8 @@
 .site-title {
   display: inline-block;
   vertical-align: top;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   line-height: 36px;
   font-size: $logo-font-size;
   font-weight: normal;
@@ -34,7 +35,7 @@
 }
 
 .site-subtitle {
-  margin-top: 100px;
+  margin-top: 40px;
   font-size: $subtitle-font-size;
   color: $subtitle-color;
 }
