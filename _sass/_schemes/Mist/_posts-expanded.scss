@@ -27,7 +27,10 @@
   }
   .post-title:hover:before { background: $black-deep; }
 
-  .post-body img { margin: 0; }
+  .post-body { 
+	background-color:rgba(225,225,225,0.8);
+	margin: 0; 
+  }
 
   .post-tags {
     text-align: left;
