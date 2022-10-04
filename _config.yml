@@ -596,7 +596,7 @@ live2d:
     position: left
     width: 150
     height: 300
-    bottom:-30
+    bottom: -30
   mobile:
     show: true
 # Local search
