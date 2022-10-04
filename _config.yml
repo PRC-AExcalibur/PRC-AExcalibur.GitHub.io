@@ -590,8 +590,7 @@ live2d:
   pluginModelPath: assets/
   tagMode: false
   debug: false
-  model:
-    use: miku 
+  model:/live2dw/assets/miku.model.json
   display: 
     position: left
     width: 150
