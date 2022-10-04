@@ -70,7 +70,6 @@ plugins:
  - jemoji
  - jekyll-sitemap
  - jekyll-feed
- - jekyll-live2d
 
 # ---------------------------------------------------------------
 # Site Information Settings
@@ -583,22 +582,6 @@ algolia_search:
     hits_empty: "We didn't find any results for the search: ${query}"
     hits_stats: "${hits} results found in ${time} ms"
 
-live2d:
-  enable: true
-  scriptFrom: local
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  debug: false
-  model: /live2dw/assets/miku.model.json
-  display: 
-    position: left
-    width: 150
-    height: 300
-    bottom: -30
-  mobile:
-    show: true
 # Local search
 local_search:
   enable: true
