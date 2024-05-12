@@ -1,5 +1,5 @@
 ---
-title:  【OpenGL】OpenGL 入门教程入门教程(5) 颜色与光照
+title:  【OpenGL】OpenGL 入门教程(5) 颜色与光照
 categories:
 - Graphics
 tags:
