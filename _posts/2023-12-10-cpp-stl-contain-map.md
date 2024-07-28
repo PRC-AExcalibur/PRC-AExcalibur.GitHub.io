@@ -53,9 +53,6 @@ map 中指定 key 的 value 是可以修改的。
     // 示例
     // 使用默认构造函数创建空 map  
     std::map<int, int> map0;
-      
-    // 使用初始化列表构造 map  
-    std::map<int, int> map1 = {{1,1},{2,1}};
     
     // 范围构造函数
     std::map<int, int> map2(map1.find(2), map1.end());
@@ -88,7 +85,10 @@ map 的迭代器接口与 之前提到过的序列容器 是完全一致的。
 ```cpp
     // 示例
     // 创建一个容器并添加一些元素
-    std::map<int, int> myMap = {{1,1},{2,1}}; 
+    std::map<int, int> myMap;
+    myMap.insert({1,1});
+    myMap.insert({2,1});
+
     // 使用正向迭代器遍历并打印元素  
     for (std::map<int, int>::iterator it = myMap.begin(); it != myMap.end(); ++it) {  
         std::cout << *it << ' ';  
@@ -117,7 +117,9 @@ map 的容量接口与 set 是一致的：
 
 ```cpp
     // 示例
-    std::map<int> map = {{1,1},{2,1}}; 
+    std::map<int, int> map;
+    map.insert({1,1});
+    map.insert({2,1});
 
     // 检查是否为空
     std::cout << "Is empty? " << std::boolalpha << map.empty() << std::endl;
@@ -226,8 +228,15 @@ Compare 对象必须可交换 (Swappable) ，并用非成员 swap 的非限定�
 ```cpp
     // 示例
     // 创建两个 set 容器  
-    std::map<std::string, int> map1 = {{"apple", 1}, {"banana", 2}, {"cherry", 3}};  
-    std::map<std::string, int> map2{{"date",1}, {"banana",2}, {"fig",3}};  
+    std::map<std::string, int> map1;
+    map1.insert({"apple", 1});
+    map1.insert({"banana", 2});
+    map1.insert({"cherry", 3});
+
+    std::map<std::string, int> map2;
+    map2.insert({"date",1});
+    map2.insert({"banana",2});
+    map2.insert({"fig",3});
   
     // 使用 extract 提取节点  
     auto extractedNode = map1.extract("banana");  
@@ -285,7 +294,10 @@ map 的查找接口和 set 基本一致。
 ```cpp
     // 示例
     // 创建一个基于 std::string 的 map 容器  
-    std::map<std::string, int> myMap = {{"apple", 1}, {"banana", 2}, {"cherry", 3}};  
+    std::map<std::string, int> myMap;
+    myMap.insert({"apple", 1});
+    myMap.insert({"banana", 2});
+    myMap.insert({"cherry", 3});
   
     // 使用 count 函数来查找具有特定键的元素数量  
     int appleCount = myMap.count("apple");  
