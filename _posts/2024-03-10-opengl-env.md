@@ -9,6 +9,7 @@ tags:
 ---
 
 本篇介绍一下 OpenGL/pyopengl 基础环境。
+
 ---
 
 # OpenGL pyopengl 基础环境介绍
