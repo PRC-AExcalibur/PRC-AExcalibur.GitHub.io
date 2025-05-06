@@ -1,17 +1,17 @@
 ---
-title:  【MOD】银心守卫 v1.0
+title:  【GIT】GitLab Linux 部署与简单使用指南
 categories:
 - GIT
 tags:
 - GitLab
-- MOD
+- GIT
 ---
 
 试试用 GitLab 搭建自己的代码仓库，并介绍简单使用。
 
 ---
 
-# GitLab Linux 部署与简单使用指南
+# 
 
 ### 一、环境准备
 
