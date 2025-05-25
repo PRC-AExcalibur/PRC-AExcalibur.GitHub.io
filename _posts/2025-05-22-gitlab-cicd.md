@@ -1,5 +1,5 @@
 ---
-title:  GitLab CI/CD 简单使用指南
+title:  【GIT】GitLab CI/CD 简单使用指南
 categories:
 - GIT
 tags:
