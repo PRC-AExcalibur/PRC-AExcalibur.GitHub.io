@@ -121,11 +121,11 @@ $ p(x) = y_1 + \frac{y_1-y_0} {x_1-x_0} (x-x_1)$
 
 > 引入记号 $ \omega _{n+1} (x) = \prod _{i=0} ^n {(x-x_i)} $
 >
-> 显然 $x = x_k$ 时 $ \omega _{n+1} ^{'} (x_k) = ((x-x_k) \prod _{i=0,i \neq k} ^n {(x-x_i)})^{'} $
+> 显然 $x = x_k$ 时 $ \omega _{n+1}' (x_k) = ((x-x_k) \prod _{i=0,i \neq k} ^n {(x-x_i)})' $
 > 
 > $= \prod _{i=0,i \neq k} ^n {(x-x_i)} + (x-x_k)(...) = \prod _{i=0,i \neq k} ^n {(x_k-x_i)}  $
 >
-> 因此 $ \omega _{n+1} ^{'} (x_k) = \prod _{i=0,i \neq k} ^n {(x_k-x_i)} $
+> 因此 $ \omega _{n+1}' (x_k) = \prod _{i=0,i \neq k} ^n {(x_k-x_i)} $
 
 
 
