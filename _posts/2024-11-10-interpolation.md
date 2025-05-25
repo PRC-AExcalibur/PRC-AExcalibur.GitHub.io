@@ -121,7 +121,7 @@ $ p(x) = y_1 + \frac{y_1-y_0} {x_1-x_0} (x-x_1)$
 
 > 引入记号 $ \omega _{n+1} (x) = \prod _{i=0} ^n {(x-x_i)} $
 >
-> 显然 $ \omega _{n+1} ^{'} (x_k) = ((x-x_k) \prod _{i=0,i \neq k} ^n {(x-x_i)})^{'}\bigg|_{x=x_k} = \prod _{i=0,i \neq k} ^n {(x-x_i)} + (x-x_k)(...) = \prod _{i=0,i \neq k} ^n {(x_k-x_i)}  $
+> 显然 $ \omega _{n+1} ^{'} (x_k) = ((x-x_k) \prod _{i=0,i \neq k} ^n {(x-x_i)})^{'}\lvert_{x=x_k} = \prod _{i=0,i \neq k} ^n {(x-x_i)} + (x-x_k)(...) = \prod _{i=0,i \neq k} ^n {(x_k-x_i)}  $
 >
 > 因此 $ \omega _{n+1} ^{'} (x_k) = \prod _{i=0,i \neq k} ^n {(x-x_i)} $
 
@@ -145,9 +145,9 @@ $ p(x) = y_1 + \frac{y_1-y_0} {x_1-x_0} (x-x_1)$
 > 
 > $k(x)$带入 $R_n(x)=k(x)  \omega _{n+1}(x)$即可
 
-如果 $f^{(n+1)}(x)$不存在呢？我们可以想办法求一个最大值 $M_{N+1} =max|f^{(n+1)}(x)|$ 来代替:
+如果 $f^{(n+1)}(x)$不存在呢？我们可以想办法求一个最大值 $M_{N+1} =max \lvert f^{(n+1)}(x) \rvert $ 来代替:
 
-有 $|R(x)| \leq \frac{M_{N+1}} {(n+1)!}|\omega _{n+1} (x)| $ 
+有 $\lvert R(x) \rvert \leq \frac{M_{N+1}} {(n+1)!} \lvert \omega _{n+1} (x)\rvert $ 
 
 
 
@@ -367,7 +367,7 @@ $ AM = D $ ，M 为 二阶导数的列向量，
 
 列向量 D 中元素 
 
-$d_0 = \frac{6(-f'0+f[x_{0}, x_1])}{h_{0}} , d_n = \frac{6(f'_n-f[x_{n-1}, x_n])}{h_{n-1}} $
+$$ d_0 = \frac{6(-f'_0+f[x_{0}, x_1])}{h_{0}} , d_n = \frac{6(f'_n-f[x_{n-1}, x_n])}{h_{n-1}} $$
 
 系数矩阵 A 如下，
 
