@@ -1,5 +1,5 @@
 ---
-title:  【MOD】银心守卫 v1.0
+title:  【MOD】银心守卫 v1.1
 categories:
 - MOD
 tags:
