@@ -6,7 +6,7 @@
 # Site
 title: 秘宝领
 subtitle: TECH OTAKUS SAVE THE WORLD
-description: 乐中乐
+description: TECH OTAKUS SAVE THE WORLD
 author: AExcalibur
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -363,7 +363,8 @@ highlight_theme: normal
 mathjax:
   enable: true
   per_page: false
-  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+  cdn: https://polyfill.io/v3/polyfill.min.js?features=es6
+  cdn_mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Han Support docs: https://hanzi.pro/
 han: false
