@@ -1,25 +1,31 @@
 {% if site.mathjax.enable %}
-  {% if page.layout == 'index' or page.mathjax or site.mathjax.per_page == nil or site.mathjax.per_page == false %}
+  {% unless site.mathjax.per_page %}
     <script>
-      MathJax = {
+      window.MathJax = {
         tex: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          inlineMath:  [ ['$','$'], ['\\(','\\)'] ],
           processEscapes: true
         },
-        svg: {
-          fontCache: 'global'
-        },
+        svg: { fontCache: 'global' },
         startup: {
-          ready: function() {
-            var all = MathJax.startup.document.getMathItemsWithin(window.document.body);
-            for (var i = 0; i < all.length; i++) {
-              all[i].sourceElement().parentNode.classList.add('has-jax');
-            }
+          ready: function () {
+            MathJax.startup.promise.then(function () {
+              const items = MathJax.startup.document.mathItems;
+              if (items) {
+                items.forEach(item => {
+                  const elem = item.start.node.parentNode;
+                  if (elem) elem.classList.add('has-jax');
+                });
+              }
+            });
+            MathJax.startup.defaultReady();
           }
         }
       };
     </script>
-    <script src="{{ site.mathjax.cdn }}"></script>
-    <script src="{{ site.mathjax.cdn_mathjax }}"></script>
-  {% endif %}
+    <!-- 如果一定要 polyfill，用 jsdelivr 镜像；否则可整行删除 -->
+    <script src="https://cdn.jsdelivr.net/npm/polyfill.io@3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {% endunless %}
 {% endif %}

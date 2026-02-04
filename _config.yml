@@ -363,8 +363,6 @@ highlight_theme: normal
 mathjax:
   enable: true
   per_page: false
-  cdn: https://polyfill.io/v3/polyfill.min.js?features=es6
-  cdn_mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Han Support docs: https://hanzi.pro/
 han: false
