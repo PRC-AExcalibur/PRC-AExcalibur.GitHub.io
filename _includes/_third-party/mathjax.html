@@ -1,23 +1,25 @@
 {% if site.mathjax.enable %}
   {% if page.layout == 'index' or page.mathjax or site.mathjax.per_page == nil or site.mathjax.per_page == false %}
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        },
+        svg: {
+          fontCache: 'global'
+        },
+        startup: {
+          ready: function() {
+            var all = MathJax.startup.document.getMathItemsWithin(window.document.body);
+            for (var i = 0; i < all.length; i++) {
+              all[i].sourceElement().parentNode.classList.add('has-jax');
+            }
+          }
         }
-      });
+      };
     </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="{{ site.mathjax.cdn }}"></script>
+    <script src="{{ site.mathjax.cdn }}"></script>
+    <script src="{{ site.mathjax.cdn_mathjax }}"></script>
   {% endif %}
 {% endif %}
